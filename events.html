@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>EVENTS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css" type="text/css">
+        <link href="events.css" rel="stylesheet" type="text/css"/>
+        
+    </head>
+    <body>
+        <div style="width:1270px; height: 100%; float: right;" class="responsive">
+            <div style="width:1270px; height: 100%; float: right; background-color:#28B463;">
+            <ul>
+            <li><a href="index.html"><img src="image/planeteers logos.png" alt="logo" style="width:100px; height: 70px;"/></a></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="news.html">NEWS</a></li>
+            <li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="events.html">EVENTS</a></li>
+            <li><a href="About.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+           </ul>
+            </div>
+        <!-- slildeshow container -->
+        <div class="upper_slide">
+            <div class="slide_auto">
+                <img src="image/ocean-debris.jpg" alt="ocean pollution"/>
+                <div class="text">Ocean debris</div>
+            </div>
+            
+            <div class="slide_auto">
+                <img src="image/NY pollution.png" alt="NY pollution"/>
+                <div class="text">NY pollution</div>
+            </div>
+            
+             <div class="slide_auto">
+                 <img src="image/central pollution.jpg" alt="oil pollution"/>
+                <div class="text">Central energy pollution</div>
+            </div>
+            
+             <div class="slide_auto">
+                 <img src="image/Bronx garden.jpg" alt="bronx garden in NYC"/>
+                <div class="text">New York City Garden</div>
+            </div>
+            
+             <div class="slide_auto">
+                 <img src="image/environment-day.jpg" alt="environment day"/>
+                 <div class="text">Environment Day June,5 every year</div>
+            </div>
+       
+        </div>
+        <br>
+        <!-- slide point -->
+        <div style="text-align: center;">
+            <span class="square"></span>
+            <span class="square"></span>
+            <span class="square"></span>
+            <span class="square"></span>
+            <span class="square"></span>
+        </div>
+        <script>
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("slide_auto");
+            var dots = document.getElementsByClassName("square");
+            for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex> slides.length) {slideIndex = 1}   
+            for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+        </script>
+        <br>
+        <table align="center">
+            <tr>
+                <td> <img src="image/time.png" alt="" style="width:80px; height: 80px;"/></td>
+                <td> <img src="image/time1.png" alt="" style="width:80px; height: 80px;"/></td>
+                <td> <img src="image/time2.png" alt="" style="width:80px; height: 80px;"/></td>
+            </tr>
+            <tr>
+                <td><p>General interest meeting with <b>NYPIRG</b></p></td>
+                <td><p>Albany trip to convince politicians to stop increasing our tuition</p></td>
+                <td><p>Movie event with special guest</p></td>
+            </tr>
+            <tr>
+                <td> <img src="image/time3.png" alt="time3" style="width:80px; height: 80px;"/></td>
+                <td> <img src="image/time4.png" alt="time4" style="width:80px; height: 80px;"/></td>
+                <td> <img src="image/time5.png" alt="time5" style="width:80px; height: 80px;"/></td>
+            </tr>
+            <tr>
+                <td><p>The Planeteers recruit at NYCCT.</p></td>
+                <td><p><b>Compost Event</b> on March 27-May 15, 6 to 9pm.<a href="http://www1.nyc.gov/assets/dsny/site/contact/master-composter-certificate-course">Learn more</a></p></td>
+                <td><p><b>Bronx Green-up Events</b>View BGU’s schedule of local events, from outdoor pruning practice to house plant workshops and certificate series.<a href="https://www.nybg.org/content/uploads/2018/01/February-2018-BGU-Schedule.pdf">Learn more</a></p></td>
+            </tr>
+        </table>
+        <div style="background-color: #28B463; height: 1cm; position: absolute; width: 1270px;">
+            <p style="text-align:center;">&#169; PLANETEERS 2018.</p>
+        </div>
+        </div>
+    </body>
+</html>

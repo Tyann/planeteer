@@ -1,0 +1,45 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 25, 2018, 2:57:36 PM
+    Author     : YannErv
+*/
+ul{
+    list-style-type: none; bottom: auto; margin: 20px; padding: 0px;
+}
+li a{
+    color: blue; text-decoration: none; text-align: center;
+    padding: 14px 16px; font-family: courier; bottom: auto;
+}
+li{
+    display: inline;
+}
+a{
+    text-decoration: none; font-family: verdana;
+}
+p{
+  font-family: verdana;
+}
+@media only screen and (max-width: 700px){
+    .responsive .div_event .div_mission .div_news .div_project .gallery .news_container .upper_gallery {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive .div_event .div_mission .div_news .div_project .gallery .news_container .upper_gallery{
+        width: 100%;
+    }
+}
+.poster{
+    background-image: url("image/recruitment-poster.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 33.5cm 32cm;
+}
